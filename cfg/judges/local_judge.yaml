@@ -1,0 +1,10 @@
+# Local judge configuration (no API required)
+
+judge:
+  type: embedding
+  model: all-MiniLM-L6-v2
+  device: auto  # 'cuda', 'cpu', or 'auto'
+
+  # Cosine similarity threshold for considering a response "good"
+  good_threshold: 0.75
+  excellent_threshold: 0.90

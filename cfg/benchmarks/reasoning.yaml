@@ -1,0 +1,64 @@
+name: reasoning-basic
+type: reasoning
+description: Logic puzzles, math problems, and deductive reasoning challenges.
+
+prompts:
+  - id: logic-001
+    text: >
+      If all A are B, and all B are C, what can we conclude about A and C?
+      Explain your reasoning step by step.
+
+  - id: batball-002
+    text: >
+      A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball.
+      How much does the ball cost? Show your work.
+
+  - id: jugs-003
+    text: >
+      You have a 3-gallon jug and a 5-gallon jug with unlimited water.
+      How do you measure exactly 4 gallons? Explain each step.
+
+  - id: coins-004
+    text: >
+      If you flip a fair coin 4 times, what is the probability of getting
+      exactly 2 heads and 2 tails? Show your calculation.
+
+  - id: trains-005
+    text: >
+      Two trains are 300 miles apart on the same track, heading toward each other.
+      Train A travels at 60 mph. Train B travels at 90 mph.
+      How long until they meet?
+
+  - id: truth-006
+    text: >
+      You meet two people. One always tells the truth, one always lies.
+      You ask Person A: "Is Person B the truth-teller?"
+      Person A says: "No."
+      Who is the truth-teller? Explain your reasoning.
+
+  - id: einstein-007
+    text: >
+      There are 5 houses in a row, each a different color, with owners of
+      different nationalities who drink different beverages, smoke different
+      brands, and keep different pets. The Norwegian lives in the first house.
+      The person who drinks milk lives in the middle house.
+      Who owns the fish? Walk through your deduction.
+
+  - id: card-008
+    text: >
+      There are 4 cards on a table: E, K, 4, 7.
+      Rule: "If a card has a vowel on one side, it has an even number on the other."
+      Which cards must you flip to test this rule? Explain.
+
+  - id: prison-009
+    text: >
+      Three prisoners are told that two of them will be executed and one freed.
+      Prisoner A asks the guard: "Tell me which of B or C will be executed."
+      The guard says B will be executed. What is the probability A is freed?
+      Explain your reasoning.
+
+  - id: birthday-010
+    text: >
+      In a room of 23 people, what is the probability that at least two share
+      a birthday? (Assume 365 equally likely birthdays, no Feb 29.)
+      Explain the calculation.
