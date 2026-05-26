@@ -1,0 +1,26 @@
+# LLM-as-Judge configuration
+
+judge:
+  type: llm
+  model: gpt-4o
+  temperature: 0.0
+  max_tokens: 512
+
+  # System prompt for the judge
+  system_prompt: |
+    You are an expert evaluator of AI model outputs.
+    Rate each response on a scale of 0.0 to 1.0 based on:
+    - Accuracy: Is the information factually correct?
+    - Completeness: Does it address all parts of the prompt?
+    - Clarity: Is the response well-structured and easy to understand?
+    - Helpfulness: Would this genuinely help the user?
+
+    Output JSON: {"score": <float>, "reasoning": "<string>"}
+
+  # Scoring rubric
+  rubric:
+    excellent: "0.9-1.0 — Perfect or near-perfect response"
+    good: "0.7-0.89 — Minor issues but solid overall"
+    adequate: "0.5-0.69 — Addresses the prompt but has notable flaws"
+    poor: "0.3-0.49 — Significant problems, partially addresses prompt"
+    bad: "0.0-0.29 — Fails to address prompt or is harmful/wrong"

@@ -1,0 +1,23 @@
+# Custom Benchmark Template
+# Copy this file, rename it, and add your own prompts.
+
+name: my-custom-benchmark
+type: custom
+description: My custom evaluation benchmark.
+
+prompts:
+  - id: custom-001
+    text: >
+      Your first evaluation prompt here.
+
+  - id: custom-002
+    text: >
+      Your second evaluation prompt here.
+
+  # Add more prompts as needed.
+  # Each prompt requires:
+  #   id: unique string identifier
+  #   text: the prompt to send to the model
+  # Optional fields:
+  #   expected: reference answer (for exact match / similarity judges)
+  #   metadata: any extra data (tags, difficulty, category, etc.)
