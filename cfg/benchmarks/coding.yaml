@@ -1,0 +1,62 @@
+name: coding-basic
+type: coding
+description: Basic programming problems for evaluating code generation ability.
+
+prompts:
+  - id: fib-001
+    text: >
+      Write a Python function `fibonacci(n: int) -> int`
+      that returns the nth Fibonacci number (0-indexed, fib(0)=0, fib(1)=1).
+      Include full type hints and a docstring with examples.
+
+  - id: pal-002
+    text: >
+      Write a Python function `is_palindrome(s: str) -> bool`
+      that checks if a string reads the same forward and backward.
+      Ignore case, spaces, and punctuation.
+
+  - id: merge-003
+    text: >
+      Write a Python function to merge two sorted lists into one sorted list.
+      Aim for O(n + m) time complexity. Include edge case handling.
+
+  - id: cache-004
+    text: >
+      Implement an LRU (Least Recently Used) cache class in Python
+      with `get(key)` and `put(key, value)` methods, both O(1) average.
+      The cache has a fixed capacity and evicts the least recently used item when full.
+
+  - id: async-005
+    text: >
+      Write an async Python function that fetches data from 3 URLs concurrently
+      using asyncio, handles timeouts (5 seconds per URL), and returns
+      results as a list of (url, content) tuples.
+
+  - id: bst-006
+    text: >
+      Write a Python function `is_valid_bst(root) -> bool`
+      that validates whether a binary tree is a valid Binary Search Tree.
+      Assume nodes have `.val`, `.left`, `.right` attributes.
+
+  - id: decorator-007
+    text: >
+      Write a Python decorator `@retry(max_attempts=3, backoff=2.0)`
+      that retries a function on any exception with exponential backoff.
+      Include proper type hints.
+
+  - id: flat-008
+    text: >
+      Write a Python function `flatten(nested_list)` that recursively
+      flattens a list of arbitrary nesting depth into a single flat list.
+      Example: flatten([1, [2, [3, 4]], 5]) → [1, 2, 3, 4, 5]
+
+  - id: group-009
+    text: >
+      Write a Python function `group_anagrams(words: List[str]) -> List[List[str]]`
+      that groups anagrams together. Optimize for time complexity.
+
+  - id: stream-010
+    text: >
+      Write a Python generator function that yields the running median
+      of a stream of integers. Each call to next() should return the
+      current median after incorporating the new value.
