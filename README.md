@@ -30,3 +30,8 @@ python evalforge.py --config eval_config.yaml --output report.md
 ## Philosophy
 
 See `docs/local_eval_philosophy.md` for why I think local eval matters for indie devs.
+
+
+## Troubleshooting
+**Q: Getting OOM errors?**
+A: Reduce batch size or enable gradient checkpointing.
