@@ -1,0 +1,28 @@
+# Small evaluation config
+
+models:
+  - name: "tiny-llama-1.1b"
+    path: "./models/tiny-llama-1.1b"
+    max_tokens: 128
+    temperature: 0.7
+  - name: "phi-2"
+    path: "./models/phi-2"
+    max_tokens: 128
+    temperature: 0.7
+
+prompts:
+  - id: "math_1"
+    text: "What is 15% of 200?"
+    expected: "30"
+    category: "math"
+  - id: "code_1"
+    text: "Write a one-liner to remove duplicates from a Python list."
+    expected: "list(set(my_list))"
+    category: "coding"
+  - id: "reasoning_1"
+    text: "If all roses are flowers, and some flowers fade quickly, can we conclude that some roses fade quickly?"
+    expected: "No, we cannot conclude that."
+    category: "reasoning"
+
+scoring:
+  method: "exact_match"
