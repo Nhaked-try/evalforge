@@ -1,1 +1,1 @@
-# Core module - fixed: Fix memory leak in llm data loader
+# Core module - fixed: Fix edge case in evaluation processing
