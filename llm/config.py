@@ -1,2 +1,1 @@
-# Config for llm
-# New: Add progress bar to llm pipeline
+# Config - Add config option for evaluation pipeline
